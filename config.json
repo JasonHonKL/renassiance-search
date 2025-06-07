@@ -1,4 +1,4 @@
 {
-    "language-model":"<model-name>",
-    "vision-model":"<model-name>"
+    "provider":"deepseek",
+    "model":"deepseek-chat"
 }

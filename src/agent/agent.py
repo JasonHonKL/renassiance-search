@@ -12,9 +12,10 @@ from pydantic import BaseModel
 
 class Agent(ABC):
 
-    @abstractmethod
     def __init__(self, model):
-        pass
+        self.model = model
+        self.name:str
+        self.description:str
 
     """
         An agent should have a run method such that it can run it's workflow 

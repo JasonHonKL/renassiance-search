@@ -16,6 +16,7 @@ class Search_agent(Agent):
         """
         self.model = model
         self.crawl = Crawl(model=model)
+        self.description = "search latest information"
 
         self.search_web = [
             "https://google.com",
@@ -28,6 +29,10 @@ class Search_agent(Agent):
         self.step = 10
         self.url_list = []
         self.db = [] 
+        self.name = "searcher"
+    
+    def set_name(self , name):
+        self.name = name
 
     async def run(self, task, data) -> str:
         """
